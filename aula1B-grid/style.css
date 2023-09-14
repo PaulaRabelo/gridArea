@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 20% 80%;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-rows: 10% 80% 10%;
+    /* grid-template-areas: 'header header'
+                        'aside main'
+                        'footer footer'; */
+    grid-template-areas: 'aside header'
+                        'aside main'
+                        'aside footer';
+}
+
+header{
+    background-color: red;
+    grid-area: header;
+    height: 10vh;
+}
+
+main{
+    background-color: rgb(175, 175, 191);
+    grid-area: main;
+    height: 80vh;
+
+}
+
+.sectionUm{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'item1 item2 item3'
+                        'item1 item4 item5';
+
+}
+
+.item1{
+    border: 1px solid black;
+    grid-area: item1;
+    height: 30vh;
+    width: 15vw;
+}
+.item2{
+    border: 1px solid black;
+    width: 15vw;
+    height: 14vh;
+    grid-area: item2;
+}
+
+.item3{
+    border: 1px solid black;
+    grid-area: item3;
+}
+
+.item3-1{
+    height: 14vh;
+    width: 7vw;
+}
+.item4{
+    border: 1px solid black;
+    height: 14vh;
+    width: 15vw;
+    grid-area: item4;
+    
+}
+.item5{
+    border: 1px solid black;
+    grid-area: item5;
+}
+
+.item5-1{
+    height: 7vh;
+    width: 14vw;
+}
+
+
+
+aside{
+    background-color: yellow;
+    grid-area: aside;
+    height: 100vh;
+}
+
+footer{
+    background-color: brown;
+    grid-area: footer;
+    height: 10vh;
+}
